@@ -10,6 +10,8 @@ MLOps/
 ├── mlruns/        # MLflow experiment tracking
 ├── models/        # Stored models
 ├── mlflow.db      # MLflow database
+├── notebooks/           # Notebooks
+├── data/           # Data
 ├── requirements.txt  # Dependencies
 └── README.md      # Documentation
 ```
