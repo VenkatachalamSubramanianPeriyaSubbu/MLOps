@@ -1,4 +1,3 @@
-```markdown
 # MLOps Repository
 
 ## Overview
