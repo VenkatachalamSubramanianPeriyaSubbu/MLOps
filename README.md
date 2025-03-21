@@ -1,3 +1,43 @@
-### About the Course 
+```markdown
+# MLOps Repository
 
-This course introduces students to the foundational concepts and methodologies underpinning the field of artificial intelligence (AI). It serves as the first part of a two-course sequence designed to explore cutting-edge topics and emerging trends within AI. The course is structured around selected topics from a core set of subjects, including AI Entrepreneurship, Natural Language Processing (NLP), Reinforcement Learning, Computer Vision, and foundational aspects of Machine Learning Operations (MLOps) and Advanced Data Engineering. Through a combination of theoretical instruction and practical exercises, students will gain a solid understanding of the basics of AI-driven innovation. By the end of this course, students will be well-prepared to engage with more specialized topics and advanced applications in the subsequent course.
+## Overview
+This repository is part of the MSDS 603 - Special Topics in AI I coursework at USF. It provides practical hands-on exercises in Machine Learning Operations (MLOps), covering key topics such as experiment tracking, model deployment, and monitoring.
+
+## Repository Structure
+```
+MLOps/
+├── labs/           # Lab exercises
+├── mlruns/        # MLflow experiment tracking
+├── models/        # Stored models
+├── mlflow.db      # MLflow database
+├── requirements.txt  # Dependencies
+└── README.md      # Documentation
+```
+
+## Getting Started
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/VenkatachalamSubramanianPeriyaSubbu/MLOps.git
+   cd MLOps
+   ```
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+3. Run MLflow UI for tracking:
+   ```bash
+   mlflow ui
+   ```
+   Open `http://localhost:5000` to view.
+
+## Course Relevance
+This repository supports the course objectives by providing practical exposure to:
+- End-to-end ML pipelines
+- System design for ML/AI applications
+- MLOps best practices
+
+## Contact
+For queries, reach out via GitHub issues.
+```
+
