@@ -1,7 +1,7 @@
 schema: '2.0'
 stages:
   prepare:
-    cmd: python src/processing.py
+    cmd: python src/preprocessing.py
     deps:
     - path: data/titanic-dataset.csv
       hash: md5
