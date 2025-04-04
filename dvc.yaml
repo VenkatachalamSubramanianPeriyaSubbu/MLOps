@@ -1,6 +1,6 @@
 stages:
   prepare:
-    cmd: python src/processing.py
+    cmd: python src/preprocessing.py
     deps:
       - data/titanic-dataset.csv
     outs:
