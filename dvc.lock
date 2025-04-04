@@ -1,30 +1,18 @@
 schema: '2.0'
 stages:
   prepare:
-    cmd: python src/create_features.py
+    cmd: python src/processing.py
     deps:
-    - path: data/adult.data
+    - path: data/titanic-dataset.csv
       hash: md5
-      md5: 5d7c39d7b8804f071cdd1f2a7c460872
-      size: 3974305
-    - path: data/adult.test
-      hash: md5
-      md5: 366c746021dc50ad9d933d2817612fc9
-      size: 2003132
-    - path: src/create_features.py
-      hash: md5
-      md5: b93aea27ba45f8b24bdd52928f1f2b99
-      size: 2564
+      md5: 2309cc5f04782ed9bb6016d9f4e381cf
+      size: 61194
     outs:
-    - path: data/pipeline.pkl
+    - path: data/pipeline-1.pkl
       hash: md5
-      md5: 2ff2f4415c961f1b4220d6b141e5f6f1
-      size: 6072
-    - path: data/processed_test_data.csv
+      md5: 9541bcead93c63e1d1a42df1d4809b6d
+      size: 23207
+    - path: data/titanic-dataset-processed.csv
       hash: md5
-      md5: a59c8daac38fe1ca84dda2b458ee762a
-      size: 5409602
-    - path: data/processed_train_data.csv
-      hash: md5
-      md5: adf63b6ce20f7ee74f63d5dabb325226
-      size: 10829967
+      md5: 49dc3184819061c11779b1dc7e74ade8
+      size: 11449
