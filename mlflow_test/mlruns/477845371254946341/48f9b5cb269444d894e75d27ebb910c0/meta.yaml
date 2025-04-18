@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/477845371254946341/48f9b5cb269444d894e75d27ebb910c0/artifacts
+end_time: 1744498699801
+entry_point_name: ''
+experiment_id: '477845371254946341'
+lifecycle_stage: active
+run_id: 48f9b5cb269444d894e75d27ebb910c0
+run_name: efficient-smelt-833
+run_uuid: 48f9b5cb269444d894e75d27ebb910c0
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744498699765
+status: 3
+tags: []
+user_id: venkatachalamsubramanianperiyasubbu

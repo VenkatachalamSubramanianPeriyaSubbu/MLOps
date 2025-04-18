@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/0/4fbd50f429a44bf2be13a344c5554802/artifacts
+deleted_time: 1744954642518
+end_time: 1744954283448
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: deleted
+run_id: 4fbd50f429a44bf2be13a344c5554802
+run_name: skillful-robin-863
+run_uuid: 4fbd50f429a44bf2be13a344c5554802
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744954282117
+status: 3
+tags: []
+user_id: venkatachalamsubramanianperiyasubbu

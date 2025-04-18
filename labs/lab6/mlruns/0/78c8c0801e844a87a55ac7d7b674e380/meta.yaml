@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/78c8c0801e844a87a55ac7d7b674e380/artifacts
+end_time: 1744954699418
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 78c8c0801e844a87a55ac7d7b674e380
+run_name: handsome-colt-978
+run_uuid: 78c8c0801e844a87a55ac7d7b674e380
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744954697948
+status: 3
+tags: []
+user_id: venkatachalamsubramanianperiyasubbu

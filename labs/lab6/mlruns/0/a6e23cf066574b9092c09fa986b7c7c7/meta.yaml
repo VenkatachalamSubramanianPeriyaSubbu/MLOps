@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/a6e23cf066574b9092c09fa986b7c7c7/artifacts
+end_time: 1744954701476
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: a6e23cf066574b9092c09fa986b7c7c7
+run_name: bold-swan-521
+run_uuid: a6e23cf066574b9092c09fa986b7c7c7
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744954700471
+status: 3
+tags: []
+user_id: venkatachalamsubramanianperiyasubbu

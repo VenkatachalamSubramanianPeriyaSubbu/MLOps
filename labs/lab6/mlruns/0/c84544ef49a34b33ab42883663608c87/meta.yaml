@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/0/c84544ef49a34b33ab42883663608c87/artifacts
+deleted_time: 1744954692074
+end_time: 1744954654453
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: deleted
+run_id: c84544ef49a34b33ab42883663608c87
+run_name: inquisitive-wren-424
+run_uuid: c84544ef49a34b33ab42883663608c87
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744954653021
+status: 3
+tags: []
+user_id: venkatachalamsubramanianperiyasubbu

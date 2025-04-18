@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/0/ab8c4cbf115543d19a7303d8ae53c487/artifacts
+deleted_time: 1744954692069
+end_time: 1744954660958
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: deleted
+run_id: ab8c4cbf115543d19a7303d8ae53c487
+run_name: welcoming-ox-219
+run_uuid: ab8c4cbf115543d19a7303d8ae53c487
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744954660938
+status: 4
+tags: []
+user_id: venkatachalamsubramanianperiyasubbu

@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/0/a1a50c3293f646ad9eb37774e370dbe8/artifacts
+deleted_time: 1744954692073
+end_time: 1744954655462
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: deleted
+run_id: a1a50c3293f646ad9eb37774e370dbe8
+run_name: grandiose-snipe-987
+run_uuid: a1a50c3293f646ad9eb37774e370dbe8
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744954654459
+status: 3
+tags: []
+user_id: venkatachalamsubramanianperiyasubbu

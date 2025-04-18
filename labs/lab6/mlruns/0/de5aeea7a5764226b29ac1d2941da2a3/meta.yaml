@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/0/de5aeea7a5764226b29ac1d2941da2a3/artifacts
+deleted_time: 1744954692070
+end_time: 1744954658552
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: deleted
+run_id: de5aeea7a5764226b29ac1d2941da2a3
+run_name: vaunted-sow-577
+run_uuid: de5aeea7a5764226b29ac1d2941da2a3
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744954657514
+status: 3
+tags: []
+user_id: venkatachalamsubramanianperiyasubbu

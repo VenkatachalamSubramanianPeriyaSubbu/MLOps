@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/c070fa5ceb5f4e0f99a5be77b6b6b181/artifacts
+end_time: 1744954703499
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: c070fa5ceb5f4e0f99a5be77b6b6b181
+run_name: whimsical-donkey-269
+run_uuid: c070fa5ceb5f4e0f99a5be77b6b6b181
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744954702510
+status: 3
+tags: []
+user_id: venkatachalamsubramanianperiyasubbu

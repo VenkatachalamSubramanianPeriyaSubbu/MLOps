@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/0fea53e1e1a04647bb53ca49620b7aae/artifacts
+end_time: 1744954700466
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 0fea53e1e1a04647bb53ca49620b7aae
+run_name: useful-flea-828
+run_uuid: 0fea53e1e1a04647bb53ca49620b7aae
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744954699423
+status: 3
+tags: []
+user_id: venkatachalamsubramanianperiyasubbu

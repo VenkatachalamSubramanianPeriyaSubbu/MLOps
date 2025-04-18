@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/0/db1b60775cb64ece8c90a84f7ef09c29/artifacts
+deleted_time: 1744954222772
+end_time: 1744954063644
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: deleted
+run_id: db1b60775cb64ece8c90a84f7ef09c29
+run_name: able-stork-615
+run_uuid: db1b60775cb64ece8c90a84f7ef09c29
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744954062084
+status: 4
+tags: []
+user_id: venkatachalamsubramanianperiyasubbu

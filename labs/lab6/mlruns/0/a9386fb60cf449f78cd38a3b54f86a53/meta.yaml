@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/0/a9386fb60cf449f78cd38a3b54f86a53/artifacts
+deleted_time: 1744954692072
+end_time: 1744954656477
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: deleted
+run_id: a9386fb60cf449f78cd38a3b54f86a53
+run_name: exultant-bass-918
+run_uuid: a9386fb60cf449f78cd38a3b54f86a53
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744954655467
+status: 3
+tags: []
+user_id: venkatachalamsubramanianperiyasubbu

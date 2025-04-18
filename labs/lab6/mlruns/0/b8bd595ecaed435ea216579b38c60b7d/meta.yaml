@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/0/b8bd595ecaed435ea216579b38c60b7d/artifacts
+deleted_time: 1744954222772
+end_time: 1744954195779
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: deleted
+run_id: b8bd595ecaed435ea216579b38c60b7d
+run_name: able-moose-735
+run_uuid: b8bd595ecaed435ea216579b38c60b7d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744954194456
+status: 3
+tags: []
+user_id: venkatachalamsubramanianperiyasubbu

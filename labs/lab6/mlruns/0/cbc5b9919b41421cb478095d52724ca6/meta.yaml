@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/0/cbc5b9919b41421cb478095d52724ca6/artifacts
+deleted_time: 1744954692071
+end_time: 1744954659605
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: deleted
+run_id: cbc5b9919b41421cb478095d52724ca6
+run_name: invincible-snake-742
+run_uuid: cbc5b9919b41421cb478095d52724ca6
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744954658558
+status: 3
+tags: []
+user_id: venkatachalamsubramanianperiyasubbu
