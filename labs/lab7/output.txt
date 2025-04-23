@@ -1,0 +1,116 @@
+│ Warning: Applied changes may be incomplete
+│ 
+│ The plan was created with the -target option in effect, so some changes requested in the configuration may have been ignored and the output
+│ values may not be fully updated. Run the following command to verify that no other changes are pending:
+│     terraform plan
+│ 
+│ Note that the -target option is not suitable for routine use, and is provided only for exceptional situations such as recovering from errors or
+│ mistakes, or when Terraform specifically suggests to use it as part of an error message.
+╵
+╷
+│ Warning: "default_secret_name" is no longer applicable for Kubernetes v1.24.0 and above
+│ 
+│   with module.services.kubernetes_service_account.metaflow_service_account,
+│   on services/service_account.tf line 2, in resource "kubernetes_service_account" "metaflow_service_account":
+│    2: resource "kubernetes_service_account" "metaflow_service_account" {
+│ 
+│ Starting from version 1.24.0 Kubernetes does not automatically generate a token for service accounts, in this case, "default_secret_name" will
+│ be empty
+╵
+
+Apply complete! Resources: 16 added, 2 changed, 0 destroyed.
+
+Outputs:
+
+END_USER_SETUP_INSTRUCTIONS = <<EOT
+V=V=V=V=V=V=V=V=V=V=V=V=V=V=V=V=V=V=V=V=V=V=V=V=V=V=V=V=V=V=V=V=V=V=V=V=V=V=V=V=V=V=V=V=V=V=V=V=V=V=V=V=V=V=V=V=V=V=V=V
+Setup instructions for END USERS (e.g. someone running Flows vs the new stack):
+-------------------------------------------------------------------------------
+There are three steps:
+1. Ensuring GCP access
+2. Configure Metaflow
+3. Run port forwards
+4. Install necessary GCP Python SDK libraries
+
+STEP 1: Ensure you have sufficient access to these GCP resources on your local workstation:
+
+- Google Kubernetes Engine ("Kubernetes Engine Developer role")
+- Google Cloud Storage ("Storage Object Admin" on bucket storage-lab7-bucket-metaflow-default)
+
+Option 1: Login with gcloud CLI
+
+Login as a sufficiently capabable user: $ gcloud auth application-default login.
+
+Option 2: Use service account key
+
+Ask for the pregenerated service account key (./metaflow_gsa_key_default.json) from the administrator (the person who stood up the Metaflow stack).
+Save the key file locally to your home directory. It should be made to be accessible only by you (chmod 700 <FILE>)
+
+STEP 2: Configure your local Kubernetes context to point to the the right Kubernetes cluster:
+
+$ gcloud container clusters get-credentials gke-metaflow-default --region=us-west2-a
+
+STEP 3: Configure Metaflow:
+
+Copy config.json to ~/.metaflowconfig/config.json:
+
+$ cp config.json ~/.metaflowconfig/config.json
+
+Edit the file based on your scenario:
+
+[For Argo only] METAFLOW_KUBERNETES_NAMESPACE=argo
+[For Argo only] METAFLOW_KUBERNETES_SERVICE_ACCOUNT=argo
+[For Airflow only] METAFLOW_KUBERNETES_NAMESPACE=airflow
+[For Airflow only] METAFLOW_KUBERNETES_SERVICE_ACCOUNT=airflow-deployment-scheduler
+[For non-Argo only] METAFLOW_KUBERNETES_SERVICE_ACCOUNT=ksa-metaflow
+
+STEP 4: Setup port-forwards to services running on Kubernetes:
+
+option 1 - run kubectl's manually:
+$ kubectl port-forward deployment/metadata-service 8080:8080
+$ kubectl port-forward deployment/metaflow-ui-backend-service 8083:8083
+$ kubectl port-forward deployment/metadata-service 3000:3000
+$ kubectl port-forward -n argo deployment/argo-server 2746:2746
+$ kubectl port-forward -n argo service/argo-events-webhook-eventsource-svc 12000:12000
+
+option 2 - this script manages the same port-forwards for you (and prevents timeouts)
+
+$ python forward_metaflow_ports.py [--include-argo] [--include-airflow]
+
+STEP 5: Install GCP Python SDK
+$ pip install google-cloud-storage google-auth
+
+ADVANCED TOPICS
+---------------
+
+Q: How to publish an Argo Event from outside the Kubernetes cluster?
+A: Ensure `forward_metaflow_ports.py --include-argo` is running. Here is a snippet that publishes
+   the event "foo" (consume this event with `@trigger(event="foo")`):
+```
+from metaflow.integrations import ArgoEvent
+
+def main():
+    evt = ArgoEvent('foo', url="http://localhost:12000/metaflow-event")
+    evt.publish(force=True)
+
+if __name__ == '__main__':
+    main()
+```
+#^=^=^=^=^=^=^=^=^=^=^=^=^=^=^=^=^=^=^=^=^=^=^=^=^=^=^=^=^=^=^=^=^=^=^=^=^=^=^=^=^=^=^=^=^=^=^=^=^=^=^=^=^=^=^=^=^=^=^=^
+
+EOT
+(mlops) venkatachalamsubramanianperiyasubbu@Venkatachalams-MacBook-Air terraform % 
+
+
+
+org_prefix = "lab7-bucket"
+project = "mlops-lab7-457703"
+enable_argo=true
+
+
+mlops-lab7-457703
+
+micromamba create -y -p ~/.metaflowconda/b5fef3295980d8735ec169758007e20f21bbbef5 python=3.9.16 numpy=1.23.5 scikit-learn=1.2.2 -c conda-forge
+micromamba create -y -p ~/.metaflowconda/b5fef3295980d8735ec169758007e20f21bbbef5 python=3.9.16 numpy=1.23.5 scikit-learn=1.2.2 -c conda-forge
+
+ln -s .metaflowconda/b5fef3295980d8735ec169758007e20f21bbbef5 .metaflow/ClassifierTrainFlow/b5fef3295980d8735ec169758007e20f21bbbef5
